@@ -1,4 +1,4 @@
-##  PCA for Fault Diagnosis
+##  CCA for Fault Diagnosis
 
 ### 描述
 利用典型相关性分析做故障诊断,案例为TE过程.
