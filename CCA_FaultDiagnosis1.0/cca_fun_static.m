@@ -21,6 +21,7 @@ function [U, S, V, P,P_res, L,L_res] = cca_fun_static(X,Y)
     [U,S,V]=svd((X*X')^(-0.5)*(X*Y')*(Y*Y')^(-0.5));
     %%%%%%%%%%%%%%%%%%%%%%%% Determine the order 
     n_o = rank(S);
+    S = S(1:n_o,1:n_o);
     % for i=1:size(S,2)
     %     if sum(sum(S(1:i,1:i)))/sum(sum(S))>0.8
     %         n_o=i;
